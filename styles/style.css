@@ -1,0 +1,296 @@
+body{
+    margin: 0 auto;
+    width: 800px;
+    border: 1px solid #0000004f;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    margin: 0 auto;
+
+}
+
+header{
+    display: flex;
+    height: 90px;
+}
+
+.header-big-button{
+    width: 150px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-small-button{
+    width: 185px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.like{
+    text-decoration: none;
+    color: red;
+}
+
+.like-image{
+    display: block;
+    width: 70px;
+    height: 70px;
+    background: url('../img/heart-image.svg') 0 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.circle{
+    width: 70px;
+    height: 70px;
+}
+
+.circle-style{
+    r: 30px;
+    cx: 35px;
+    cy: 35px;
+    fill: rgba(255,255,255,255);
+    stroke: red;
+    stroke-width: 1px;
+}
+
+.hide{
+    stroke: blue;
+}
+
+line{
+    stroke: blue;
+}
+
+.heart{
+    position: absolute;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    top: 20px;
+    left: 13px;
+}
+
+.online-icon {
+    display: inline-block;
+    width: 20px;
+    height: 10px;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+}
+
+.profile-icon {
+    display: inline-block;
+    position: relative;
+    width: 64px;
+    height: 40px;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+}
+
+.circle-profile{
+    position: absolute;
+}
+
+.image-profile{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 8px;
+    left: 4px;
+}
+
+.image-super-like{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 12px;
+    left: 5px;
+}
+
+.icon {
+    display: inline-block;
+    position: relative;
+    top: 0;
+    width: 70px;
+    height: 70px;
+    margin: 0 .3em 0 0;
+    transition: .5s;
+    fill: rgba(255,255,255,255);
+    filter: url(#shadow);
+    stroke: red;
+    stroke-width: 5;
+    }
+A:hover .icon {
+    fill: rgba(255,255,255,255);
+    stroke: rgba(255,255,255,255);
+    stroke-width: 5;
+}
+A:hover .circle-style {
+    fill: red;
+    stroke: currentColor;
+    stroke-width: 5;
+}
+A:hover .hide {
+    fill: blue;
+    stroke: blue;
+    stroke-width: 5;
+}
+A:hover line{
+    stroke: rgba(255,255,255,255);
+    stroke-width: 2;
+}
+
+path {
+    transform: translate(7px) scale(.3);
+}
+
+.photo{
+    width: 120px;
+    height: 120px;
+    display: inline-block;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.s1{
+    background-image: url('../img/s1.jpg');
+}
+.s2{
+    background-image: url('../img/s2.jpg');
+    background-size: 170%;
+}
+.s3{
+    background-image: url('../img/s3.jpg');
+}
+.s4{
+    background-image: url('../img/s4.jpg');
+    background-size: 110%;
+}
+.s5{
+    background-image: url('../img/s5.jpg');
+    background-size: 137%;
+}
+.s6{
+    background-image: url('../img/s6.jpg');
+}
+.s7{
+    background-image: url('../img/s7.jpg');
+}
+  
+  .carousel {
+    position: relative;
+    width: 718px;
+    padding: 10px 40px;
+    border: 1px solid #CCC;
+    border-radius: 15px;
+    background: #eee;
+  }
+  
+  .carousel img {
+    width: 120px;
+    height: 120px;
+    /* по умолчанию inline, в ряде браузеров это даст лишнее пространство вокруг элементов */
+  
+    display: block;
+  }
+  
+  .arrow {
+    position: absolute;
+    top: 60px;
+    padding: 0;
+    background: #ddd;
+    border-radius: 15px;
+    border: 1px solid gray;
+    font-size: 24px;
+    line-height: 24px;
+    color: #444;
+    display: block;
+  }
+  
+  .arrow:focus {
+    outline: none;
+  }
+  
+  .arrow:hover {
+    background: #ccc;
+    cursor: pointer;
+  }
+  
+  .prev {
+    left: 7px;
+  }
+  
+  .next {
+    right: 7px;
+  }
+  
+  .gallery {
+    overflow: hidden;
+  }
+  
+  .gallery ul {
+    height: 120px;
+    width: 9999px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    transition: margin-left 250ms;
+    /* remove white-space between inline-block'ed li */
+    /* http://davidwalsh.name/remove-whitespace-inline-block */
+  
+    font-size: 0;
+  }
+  
+  .gallery li {
+    display: inline-block;
+  }
+
+  .education{
+    width: 480px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #00000038;
+  }
+
+  h1{
+    margin-left: 60px;
+  }
+
+  .about-education{
+    margin-left: 60px;
+    position: relative;
+  }
+
+  .about-education::after{
+    content: ' ';
+    width: 410px;
+    position: absolute;
+    top: 50px;
+    left: -20px;
+    border-bottom: 1px solid black;
+  }
+
+  .map {
+    width: 400px;
+    height: 140px;
+    margin-left: 40px;
+    background-color: grey;
+  }
+
+  .education-and-score{
+      display:flex;
+  }
+
+  .score{
+    margin-left: 25px;
+  }

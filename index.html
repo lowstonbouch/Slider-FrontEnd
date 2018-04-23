@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Slider</title>
+</head>
+
+<body>
+    <svg width="0" height="0">
+        <defs>
+            <path id="heart" d="M100 34.976c0 8.434-3.635 16.019-9.423 21.274h0.048l-31.25 31.25c-3.125 3.125-6.25 6.25-9.375 6.25s-6.25-3.125-9.375-6.25l-31.202-31.25c-5.788-5.255-9.423-12.84-9.423-21.274 0-15.865 12.861-28.726 28.726-28.726 8.434 0 16.019 3.635 21.274 9.423 5.255-5.788 12.84-9.423 21.274-9.423 15.865 0 28.726 12.861 28.726 28.726z"
+            />
+            <path id="icon-display" d="M0 2v20h32v-20h-32zM30 20h-28v-16h28v16zM21 24h-10l-1 4-2 2h16l-2-2z"  />
+            <path id="icon-mobile" d="M23 0h-14c-1.65 0-3 1.35-3 3v26c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3v-26c0-1.65-1.35-3-3-3zM12 1.5h8v1h-8v-1zM16 30c-1.105 0-2-0.895-2-2s0.895-2 2-2 2 0.895 2 2-0.895 2-2 2zM24 24h-16v-20h16v20z" />
+            <path id="icon-profile" d="M36 44.163v-3.299c4.406-2.483 8-8.673 8-14.864 0-9.941 0-18-12-18s-12 8.059-12 18c0 6.191 3.594 12.382 8 14.864v3.299c-13.569 1.109-24 7.776-24 15.837h56c0-8.060-10.431-14.727-24-15.837z" />
+            <path id="icon-super-like" d="M40 32h9.531c-0.375 0.406-0.625 0.625-0.687 0.687l-19.469 18.75c-0.375 0.375-0.875 0.563-1.375 0.563s-1-0.188-1.375-0.563l-19.5-18.813c-0.063-0.031-0.312-0.25-0.656-0.625h11.531c0.906 0 1.719-0.625 1.938-1.5l2.188-8.781 5.937 20.844c0.25 0.844 1.031 1.438 1.938 1.438v0c0.875 0 1.656-0.594 1.906-1.438l4.563-15.156 1.75 3.5c0.344 0.656 1.031 1.094 1.781 1.094zM56 18.625c0 3.594-1.562 6.875-3.219 9.375h-11.531l-3.469-6.906c-0.344-0.719-1.156-1.156-1.938-1.094-0.844 0.094-1.531 0.625-1.75 1.438l-4.031 13.437-6.125-21.438c-0.25-0.844-1.031-1.438-1.969-1.438-0.906 0-1.687 0.625-1.906 1.5l-3.625 14.5h-13.219c-1.656-2.5-3.219-5.781-3.219-9.375 0-9.156 5.594-14.625 14.938-14.625 5.469 0 10.594 4.312 13.062 6.75 2.469-2.437 7.594-6.75 13.062-6.75 9.344 0 14.938 5.469 14.938 14.625z"/>
+</symbol>
+        </defs>
+    </svg>
+
+    <header>
+        <div class="header-big-button">
+            <a class="like" href="#">
+                <span class="icon">
+                    <svg class = "circle">
+                            <circle class = "circle-style" />
+                            <span class = "heart">
+                                    <svg width="70" height="70">
+                                            <use xlink:href="#heart" />
+                                    </svg>
+                            </span>
+
+                    </svg>
+                </span>
+            </a>
+            <a class="diselike" href="#">
+                <span class="icon">
+                        <svg class = "circle">
+                                <circle class = "circle-style hide" />
+                                <svg width="70" height="70">
+                                        <line x1="47" y1="23" x2="22" y2="48" stroke="violet" stroke-width="1" />
+                                </svg>
+                                <svg width="70" height="70">
+                                        <line x1="47" y1="48" x2="22" y2="23" stroke="violet" stroke-width="1" />
+                                </svg>
+                        </svg>
+                </span>
+            </a>
+        </div>
+        <div class="tittle-info">
+            <span><svg width="5" height="5">
+                    <circle r="2.5" cx="2.5" cy="2.5"
+                            fill="orangered"/>
+               </svg>  Яночка, 25<svg class="online-icon icon-display"><use xlink:href="#icon-display"></use></svg><svg class="online-icon icon-mobile"><use xlink:href="#icon-mobile"></use></svg></span>
+            <p>МИСТО, международных экономических отношений и менеджмента, 2015</p>
+        </div>
+        <div class="header-small-button">
+            <a class="like" href="#">
+                <span class="profile-icon">
+                    <svg class = "circle-profile" width="40" height="40">
+                            <circle r="19" cx="20" cy="20"
+                            stroke="orangered" fill="white" stroke-width="1"/>
+                    </svg> 
+                    <svg class = "image-super-like" >
+                        <use xlink:href="#icon-super-like" />
+                    </svg>
+                </span>
+            </a>
+            <a class="diselike" href="#">
+                <span class="profile-icon">
+                        <svg class = "circle-profile" width="40" height="40">
+                                <circle r="19" cx="20" cy="20"
+                                stroke="orangered" fill="white" stroke-width="1"/>
+                           </svg> 
+                    <svg class = "image-profile">
+                        <use xlink:href="#icon-profile" />
+                    </svg>
+                </span>
+            </a>
+        </div>
+    </header>
+    <section class="content">
+        <section class="photo-wrapper">
+            <div id="carousel" class="carousel">
+                <button class="arrow prev">⇦</button>
+                <div class="gallery">
+                    <ul class="images">
+                        <li>
+                            <img class="photo s1">
+                        </li>
+                        <li>
+                            <img class="photo s2">
+                        </li>
+                        <li>
+                            <img class="photo s3">
+                        </li>
+                        <li>
+                            <img class="photo s4">
+                        </li>
+                        <li>
+                            <img class="photo s5">
+                        </li>
+                        <li>
+                            <img class="photo s7">
+                        </li>
+                        <li>
+                            <img class="photo s1">
+                        </li>
+                    </ul>
+                </div>
+                <button class="arrow next">⇨</button>
+            </div>
+        </section>
+        <section class="info-wrapper">
+            <div class = "education-and-score">
+                    <div class="education">
+                            <h1>Образование</h1>
+                            <p class = "about-education">МИСТО, международных экономических отношений и менеджмента, 2015</p>
+                        </div>
+                    <div class = "score">
+                        <p>Рейтинг</p>
+                    </div>
+            </div>
+
+            <div id="map" class="map"></div>
+
+            </div>
+            <div class="social">
+                <p> Я хочу</p>
+                <p> Хочет общаться</p>
+            </div>
+        </section>
+    </section>
+    <script async src="./js/main.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3ywRh3PiC4JARCLrmmteFSUVupYLmKj8&callback=initMap" async
+        defer></script>
+</body>
+
+</html>
