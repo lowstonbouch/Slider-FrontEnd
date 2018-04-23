@@ -20,7 +20,7 @@
         </defs>
     </svg>
 
-    <header>
+    <header id = "header">
         <div class="header-big-button">
             <a class="like" href="#">
                 <span class="icon">
@@ -68,13 +68,13 @@
                     </svg>
                 </span>
             </a>
-            <a class="diselike" href="#">
+            <a  class="diselike" href="#">
                 <span class="profile-icon">
-                        <svg class = "circle-profile" width="40" height="40">
+                        <svg  class = "circle-profile" width="40" height="40">
                                 <circle r="19" cx="20" cy="20"
                                 stroke="orangered" fill="white" stroke-width="1"/>
                            </svg> 
-                    <svg class = "image-profile">
+                    <svg id = "profile" class = "image-profile">
                         <use xlink:href="#icon-profile" />
                     </svg>
                 </span>
@@ -82,38 +82,38 @@
         </div>
     </header>
     <section class="content">
-        <section class="photo-wrapper">
+        <section id = "photo-wrapper" class="photo-wrapper">
             <div id="carousel" class="carousel">
-                <button class="arrow prev">⇦</button>
+                <button id = "prev" class="arrow prev">⇦</button>
                 <div class="gallery">
                     <ul class="images">
                         <li>
-                            <img class="photo s1">
+                            <img id="photo-1" class="photo s1">
                         </li>
                         <li>
-                            <img class="photo s2">
+                            <img id="photo-2" class="photo s2">
                         </li>
                         <li>
-                            <img class="photo s3">
+                            <img id="photo-3" class="photo s3">
                         </li>
                         <li>
-                            <img class="photo s4">
+                            <img id="photo-4" class="photo s4">
                         </li>
                         <li>
-                            <img class="photo s5">
+                            <img id="photo-5" class="photo s5">
                         </li>
                         <li>
-                            <img class="photo s7">
+                            <img id="photo-6" class="photo s7">
                         </li>
                         <li>
-                            <img class="photo s1">
+                            <img id="photo-1" class="photo s1">
                         </li>
                     </ul>
                 </div>
-                <button class="arrow next">⇨</button>
+                <button id = "next" class="arrow next">⇨</button>
             </div>
         </section>
-        <section class="info-wrapper">
+        <section id = "info-wrapper" class="info-wrapper">
             <div class = "education-and-score">
                     <div class="education">
                             <h1>Образование</h1>
@@ -130,6 +130,15 @@
             <div class="social">
                 <p> Я хочу</p>
                 <p> Хочет общаться</p>
+            </div>
+        </section>
+        <section id = "big-photo-wrapper" class = "none">
+            <div id="carousel-big-photo" class="carousel-big-photo">
+                <button id = "prev-big" class="arrow prev">⇦</button>
+                <div class="gallery">
+                    <img id= "image-big" class="big-photo s1 big-photo-1">
+                </div>
+                <button id = "next-big" class="arrow next">⇨</button>
             </div>
         </section>
     </section>

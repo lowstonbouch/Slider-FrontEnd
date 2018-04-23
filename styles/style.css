@@ -153,12 +153,17 @@ path {
     transform: translate(7px) scale(.3);
 }
 
+.none{
+    display: none;
+}
+
 .photo{
     width: 120px;
     height: 120px;
     display: inline-block;
     background-size: 100%;
     background-repeat: no-repeat;
+    cursor: pointer;
 }
 
 .s1{
@@ -293,4 +298,30 @@ path {
 
   .score{
     margin-left: 25px;
+  }
+
+  .carousel-big-photo{
+    position: relative;
+    width: 718px;
+    padding: 10px 40px;
+    border: 1px solid #CCC;
+    border-radius: 15px;
+    background: #eee;
+  }
+
+  .big-photo{
+    display: block;
+    margin: auto;
+    background-repeat: no-repeat;
+  }
+
+  .big-photo-1{
+    width: 486px;
+    height: 650px;
+  }
+
+  .big-photo-2{
+    width: 630px;
+    height: 469px;
+    background-size: 100%;
   }
