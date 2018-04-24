@@ -4,35 +4,61 @@ const carouselBig = document.getElementById('carousel-big-photo');
 const photoWrapper = document.getElementById('photo-wrapper');
 const infoWrapper = document.getElementById('info-wrapper');
 const likeWrapper = document.getElementById('like');
-const likeIcon = document.getElementById('like-icon');
+const dislikeWrapper = document.getElementById('dislike');
+const superLikeWrapper = document.getElementById('super-like');
+const profileWrapper = document.getElementById('profile');
 const bigPhotoWrapper = document.getElementById('big-photo-wrapper');
-const header = document.getElementById('header');
 
 carousel.addEventListener('click', carouselIvent);
 carouselBig.addEventListener('click', carouselBigIvent);
-header.addEventListener('click', headerIvent);
 likeWrapper.addEventListener('click',handleLike);
+dislikeWrapper.addEventListener('click',handleDislike);
+superLikeWrapper.addEventListener('click',handleSuperLike);
+profileWrapper.addEventListener('click',handleProfile);
 
 let numberPhoto = 0;
 let position = 0;
 let like = false;
+let dislike = false;
+let superLike = false;
+
+function handleProfile(){
+  renderContent();
+}
+
+function handleSuperLike(){
+  superLike = !superLike;
+  if(superLike){
+    superLikeWrapper.className = 'super-like super-like-true';
+    superLikeWrapper.classList.add('click');
+  }
+  else{
+    superLikeWrapper.classList.remove('click');
+    superLikeWrapper.className = 'super-like';
+  }
+}
+
+function handleDislike(){
+  dislike = !dislike;
+  if(dislike){
+    dislikeWrapper.className = 'dislike dislike-true';
+    dislikeWrapper.classList.add('click');
+  }
+  else{
+    dislikeWrapper.classList.remove('click');
+    dislikeWrapper.className = 'dislike';
+  }
+}
 
 function handleLike(){
   like = !like;
   if(like){
-    likeIcon.className = 'heart heart-false';
+    likeWrapper.className = 'like heart-true';
+    likeWrapper.classList.add('click');
   }
   else{
-    likeIcon.className = 'heart heart-true';
-  }
-}
-
-function headerIvent(event){
-  const target = event.target;
-  console.log(target);
- 
-  if(target.id === "profile"){
-    renderContent();
+    likeWrapper.classList.remove('click');
+    likeWrapper.className = 'like';
   }
 }
 
@@ -45,6 +71,8 @@ function carouselIvent(event) {
   let list = carousel.querySelector('ul');
   let listElems = carousel.querySelectorAll('li');
   let width = listElems.length* 134 - 804;
+
+  console.log(target.id);
 
   if(target.id === "prev" && position < 0){
     position = position + 134;

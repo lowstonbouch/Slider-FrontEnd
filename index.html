@@ -8,41 +8,29 @@
 </head>
 
 <body>
-    <svg width="0" height="0">
-        <defs>
-            <path id="heart" d="M100 34.976c0 8.434-3.635 16.019-9.423 21.274h0.048l-31.25 31.25c-3.125 3.125-6.25 6.25-9.375 6.25s-6.25-3.125-9.375-6.25l-31.202-31.25c-5.788-5.255-9.423-12.84-9.423-21.274 0-15.865 12.861-28.726 28.726-28.726 8.434 0 16.019 3.635 21.274 9.423 5.255-5.788 12.84-9.423 21.274-9.423 15.865 0 28.726 12.861 28.726 28.726z"
-            />
-            <path id="icon-display" d="M0 2v20h32v-20h-32zM30 20h-28v-16h28v16zM21 24h-10l-1 4-2 2h16l-2-2z" />
-            <path id="icon-mobile" d="M23 0h-14c-1.65 0-3 1.35-3 3v26c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3v-26c0-1.65-1.35-3-3-3zM12 1.5h8v1h-8v-1zM16 30c-1.105 0-2-0.895-2-2s0.895-2 2-2 2 0.895 2 2-0.895 2-2 2zM24 24h-16v-20h16v20z"
-            />
-            <path id="icon-profile" d="M36 44.163v-3.299c4.406-2.483 8-8.673 8-14.864 0-9.941 0-18-12-18s-12 8.059-12 18c0 6.191 3.594 12.382 8 14.864v3.299c-13.569 1.109-24 7.776-24 15.837h56c0-8.060-10.431-14.727-24-15.837z"
-            />
-            <path id="icon-super-like" d="M40 32h9.531c-0.375 0.406-0.625 0.625-0.687 0.687l-19.469 18.75c-0.375 0.375-0.875 0.563-1.375 0.563s-1-0.188-1.375-0.563l-19.5-18.813c-0.063-0.031-0.312-0.25-0.656-0.625h11.531c0.906 0 1.719-0.625 1.938-1.5l2.188-8.781 5.937 20.844c0.25 0.844 1.031 1.438 1.938 1.438v0c0.875 0 1.656-0.594 1.906-1.438l4.563-15.156 1.75 3.5c0.344 0.656 1.031 1.094 1.781 1.094zM56 18.625c0 3.594-1.562 6.875-3.219 9.375h-11.531l-3.469-6.906c-0.344-0.719-1.156-1.156-1.938-1.094-0.844 0.094-1.531 0.625-1.75 1.438l-4.031 13.437-6.125-21.438c-0.25-0.844-1.031-1.438-1.969-1.438-0.906 0-1.687 0.625-1.906 1.5l-3.625 14.5h-13.219c-1.656-2.5-3.219-5.781-3.219-9.375 0-9.156 5.594-14.625 14.938-14.625 5.469 0 10.594 4.312 13.062 6.75 2.469-2.437 7.594-6.75 13.062-6.75 9.344 0 14.938 5.469 14.938 14.625z"
-            />
-            </symbol>
-        </defs>
-    </svg>
 
     <header id="header">
         <div class="header-big-button">
-            <a  class="like" href="#">
+            <a id = "like" class="like" href="#">
                     <svg width="60" height="60" xmlns="http://www.w3.org/2000/svg">
                         <g>
                          <title>Layer 1</title>
-                         <ellipse ry="25.5" rx="25.5" id="svg_3" cy="30" cx="30" stroke-width="1.5" stroke="#000" fill="#fff"/>
-                         <path id="svg_4" d="m30,24.033622c4.735329,-13.58496 23.288503,0 0,17.466377c-23.288503,-17.466377 -4.735329,-31.051338 0,-17.466377z" stroke-width="1.5" stroke="#000" fill="#fff"/>
+                         <ellipse ry="25.5" rx="25.5" id="svg_3" cy="30" cx="30"/>
+                         <path id="svg_4" d="m30,24.033622c4.735329,-13.58496 23.288503,0 0,17.466377c-23.288503,-17.466377 -4.735329,-31.051338 0,-17.466377z" />
                         </g>
                        </svg>
+                       <span>Или нажмите 1 на клавиатуре</span>
             </a>
-            <a href="#">
+            <a id = "dislike" class="dislike" href="#">
                     <svg width="60" height="60" xmlns="http://www.w3.org/2000/svg">
                         <g>
                          <title>Layer 1</title>
                          <ellipse ry="25.5" rx="25.5" id="svg_3" cy="30" cx="30" stroke-width="1.5" stroke="#000" fill="#fff"/>
-                         <line transform="rotate(44.57601547241211 29.999999999999996,29.999996185302734) " stroke-linecap="null" stroke-linejoin="null" id="svg_12" y2="29.999998" x2="41.597416" y1="29.999998" x1="18.402589" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
-                         <line stroke="#000" transform="rotate(-46 30,30) " stroke-linecap="null" stroke-linejoin="null" id="svg_13" y2="30.000002" x2="41.597414" y1="30.000002" x1="18.402587" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="none"/>
+                         <line transform="rotate(44.57601547241211 29.999999999999996,29.999996185302734) " stroke-linecap="null" stroke-linejoin="null" id="svg_12" y2="29.999998" x2="41.597416" y1="29.999998" x1="18.402589" fill-opacity="null" stroke-opacity="null" stroke-width="1.5"/>
+                         <line stroke="#000" transform="rotate(-46 30,30) " stroke-linecap="null" stroke-linejoin="null" id="svg_13" y2="30.000002" x2="41.597414" y1="30.000002" x1="18.402587" fill-opacity="null" stroke-opacity="null" stroke-width="1.5"/>
                         </g>
                        </svg>
+                       <span>Или нажмите 2 на клавиатуре</span>
             </a>
         </div>
         <div class="tittle-info">
@@ -51,35 +39,34 @@
                     <circle r="2.5" cx="2.5" cy="2.5"/>
                 </svg> Яночка, 25
                 <span class = "online">
-                        <svg class="circle-mobile">
-                                <circle class="circle-style hide circle-style-mobile" />
-                                <span class = "mobile">
-                                        <svg class="online-icon icon-mobile">
-                                                <use xlink:href="#icon-mobile"></use>
-                                            </svg>
-                                </span>
-        
-                    </svg>
+                        <svg width="25" height="25" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                             <title>Layer 1</title>
+                             <path id="svg_1" d="m15.625,3.75l-7,0c-0.825,0 -1.5,0.675 -1.5,1.5l0,13c0,0.825 0.675,1.5 1.5,1.5l7,0c0.825,0 1.5,-0.675 1.5,-1.5l0,-13c0,-0.825 -0.675,-1.5 -1.5,-1.5zm-5.5,0.75l4,0l0,0.5l-4,0l0,-0.5zm2,14.25c-0.552,0 -1,-0.448 -1,-1s0.448,-1 1,-1s1,0.448 1,1s-0.448,1 -1,1zm4,-3l-8,0l0,-10l8,0l0,10z"/>
+                             <ellipse stroke="#000000" ry="11.312092" rx="10.687498" id="svg_2" cy="12.5" cx="12.5" stroke-width="NaN" />
+                            </g>
+                           </svg>
                 </span>
 
             </span>
             <p class = "about-profile">МИСТО, международных экономических отношений и менеджмента, 2015</p>
         </div>
         <div class="header-small-button">
-            <a class="like" href="#">
+            <a id = "super-like" class="super-like" href="#">
                     <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
                         <g>
-                         <title>Layer 1</title>
-                         <ellipse ry="21.5" rx="21.5" id="svg_14" cy="25" cx="25" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="#fff"/>
-                         <path id="svg_19" d="m25,19.22822c4.580884,-13.141879 22.528936,0 0,16.896702c-22.528936,-16.896702 -4.580884,-30.038581 0,-16.896702z" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="#fff"/>
+                         <title>Super like</title>
+                         <ellipse ry="21.5" rx="21.5" id="svg_14" cy="25" cx="25" fill-opacity="null" stroke-opacity="null" stroke-width="1.5"/>
+                         <path id="svg_19" d="m25,19.22822c4.580884,-13.141879 22.528936,0 0,16.896702c-22.528936,-16.896702 -4.580884,-30.038581 0,-16.896702z" fill-opacity="null" stroke-opacity="null" stroke-width="1.5"/>
                          <path transform="rotate(-20.107812881469727 12.308321952819819,25.708049774169922) " id="svg_26" d="m13.183315,29.64552l0,0c-0.966406,0 -1.749988,-1.762557 -1.749988,-3.937473c0,-2.174637 0.783582,-3.937473 1.749988,-3.937473l0,0c-0.550755,0.92948 -0.874934,2.38834 -0.874934,3.937473s0.324179,3.007714 0.874934,3.937473z" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="#fff"/>
                          <path transform="rotate(-20.107812881469727 8.933345794677757,27.08304023742676) " id="svg_27" d="m9.808339,31.02051l0,0c-0.966406,0 -1.749988,-1.762556 -1.749988,-3.937472c0,-2.174637 0.783582,-3.937473 1.749988,-3.937473l0,0c-0.550755,0.92948 -0.874934,2.38834 -0.874934,3.937473s0.324179,3.007714 0.874934,3.937472z" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="#fff"/>
                          <path transform="rotate(-156.07974243164062 37.80814361572266,25.58304786682129) " id="svg_28" d="m38.683136,29.520521l0,0c-0.966406,0 -1.749988,-1.762556 -1.749988,-3.937472c0,-2.174637 0.783582,-3.937473 1.749988,-3.937473l0,0c-0.550755,0.92948 -0.874934,2.38834 -0.874934,3.937473s0.324179,3.007714 0.874934,3.937472z" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="#fff"/>
                          <path transform="rotate(-156.07974243164062 40.80812072753907,27.208036422729492) " id="svg_29" d="m41.683115,31.14551l0,0c-0.966406,0 -1.749988,-1.762556 -1.749988,-3.937472c0,-2.174637 0.783582,-3.937473 1.749988,-3.937473l0,0c-0.550755,0.92948 -0.874934,2.38834 -0.874934,3.937473s0.324179,3.007714 0.874934,3.937472z" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="#fff"/>
                         </g>
                        </svg>
+                       <span>Или нажмите 3 на клавиатуре</span>
             </a>
-            <a href="#">
+            <a id = "profile" class="profile" href="#">
                     <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
                         <g>
                          <title>Layer 1</title>
@@ -93,8 +80,16 @@
     <section class="content">
         <section id="photo-wrapper" class="photo-wrapper">
             <div id="carousel" class="carousel">
-                <button id="prev" class="arrow prev">
-                    <</button>
+                <a id="prev" class="arrow prev">
+                        <svg width="30" height="30" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                             <title>Layer 1</title>
+                             <ellipse id="svg_4" cy="18.499998" cx="51.187494" stroke-width="NaN" stroke="#000000" fill="none"/>
+                             <path id="svg_11" d="m15.000004,27.312497c6.800319,0 12.312492,-5.512518 12.312492,-12.312495c0,-6.799991 -5.512174,-12.312499 -12.312492,-12.312499c-6.799986,0 -12.312499,5.512507 -12.312499,12.312499c0,6.799977 5.512513,12.312495 12.312499,12.312495zm1.978078,-20.550237l2.995698,2.997336l-5.241354,5.241051l5.241354,5.241369l-2.995698,2.996346l-8.236775,-8.237714l8.236775,-8.238387l0,-0.000001z" fill-opacity="null" stroke-opacity="null" stroke-width="NaN" stroke="#000000" fill="none"/>
+                            </g>
+                            <span>Или нажмите влево на клавиатуре</span>
+                           </svg>
+                </a>
                         <div class="gallery">
                             <ul class="images">
                                 <li>
@@ -120,7 +115,16 @@
                                 </li>
                             </ul>
                         </div>
-                        <button id="next" class="arrow next">></button>
+                        <a id="next" class="arrow next">
+                                <svg width="30" height="30" xmlns="http://www.w3.org/2000/svg">
+                                    <g>
+                                     <title>Layer 1</title>
+                                     <ellipse id="svg_4" cy="18.499998" cx="51.187494" stroke-width="NaN" stroke="#000000" fill="none"/>
+                                     <path transform="rotate(179.87295532226562 15,14.999999046325684) " id="svg_11" d="m15.000004,27.312497c6.800319,0 12.312492,-5.512518 12.312492,-12.312495c0,-6.799991 -5.512174,-12.312499 -12.312492,-12.312499c-6.799986,0 -12.312499,5.512507 -12.312499,12.312499c0,6.799977 5.512513,12.312495 12.312499,12.312495zm1.978078,-20.550237l2.995698,2.997336l-5.241354,5.241051l5.241354,5.241369l-2.995698,2.996346l-8.236775,-8.237714l8.236775,-8.238387l0,-0.000001z" fill-opacity="null" stroke-opacity="null" stroke-width="NaN" stroke="#000000" fill="none"/>
+                                    </g>
+                                   </svg>
+                                   <span>Или нажмите вправо на клавиатуре</span>
+                        </a>
             </div>
         </section>
         <section id="info-wrapper" class="info-wrapper">

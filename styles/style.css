@@ -2,6 +2,7 @@ body{
     margin: 0 auto;
     width: 800px;
     border: 1px solid #0000004f;
+    border-top: none;
     font-family: 'arial';
     color: #353535fa;
 }
@@ -34,9 +35,102 @@ header{
     justify-content: flex-end;
 }
 
+
+.super-like{
+    text-decoration: none;
+    color: #ff3636;
+}
+
+.super-like ellipse{
+    fill:white;
+    stroke: #ff3636;
+    stroke-width: 1px;
+    transition: .3s;
+}
+
+.super-like path{
+    fill:white;
+    stroke: #ff3636;
+    stroke-width: 1px;
+    transition: .3s;
+}
+
+.super-like:hover path{
+    fill:white;
+    stroke: white;
+    stroke-width: 1px;
+    transition: .3s;
+}
+
+.super-like:hover ellipse{
+    fill:#ff3636;
+    stroke: #ff3636;
+}
+
+.super-like-true path{
+        fill:#ff3636;
+        stroke: #ff3636;
+        stroke-width: 1px;
+        transition: .3s;
+}
+
 .like{
     text-decoration: none;
     color: #ff3636;
+}
+
+.like ellipse{
+    fill:white;
+    stroke: #ff3636;
+    stroke-width: 1px;
+    transition: .3s;
+}
+
+.like path{
+    fill:white;
+    stroke: #ff3636;
+    stroke-width: 1px;
+    transition: .3s;
+}
+
+.like:hover ellipse{
+    fill:#ff3636;
+    stroke: #ff3636;
+}
+
+dislike{
+    text-decoration: none;
+    color: #0329b3;
+}
+
+.dislike ellipse{
+    fill:white;
+    stroke: #0329b3;
+    stroke-width: 1px;
+    transition: .3s;
+}
+
+.dislike line{
+    fill:none;
+    stroke: #0329b3;
+    stroke-width: 1px;
+    transition: .3s;
+}
+
+.dislike:hover ellipse{
+    fill:#0329b3;
+    stroke: #0329b3;
+}
+
+.dislike:hover line{
+    fill:none;
+    stroke: white;
+}
+
+.dislike-true line{
+    fill:none;
+    stroke-width: 3px;
+    stroke: #0329b3;
 }
 
 .svg-like{
@@ -89,23 +183,9 @@ line{
     transition: .5s;
 }
 
-.heart-true{
+.heart-true path{
 fill:#ff3636;
 stroke:white;
-}
-
-.heart-false{
-    fill:white;
-    stroke:#ff3636;
-}
-
-.online-icon {
-    display: inline-block;
-    width: 20px;
-    height: 10px;
-    stroke-width: 0;
-    stroke: currentColor;
-    fill: blue;
 }
 
 .user-online{
@@ -118,8 +198,14 @@ stroke:white;
     fill: gray;
 }
 
-.online{
-    position: relative;
+.online ellipse{
+    stroke: #0f81a2;
+    fill:none;
+}
+
+.online path{
+    stroke: #0f81a2;
+    fill:none;
 }
 
 .mobile{
@@ -128,39 +214,44 @@ stroke:white;
     left: 0px;
 }
 
-.profile-icon {
-    display: inline-block;
-    position: relative;
-    width: 64px;
-    height: 40px;
-    stroke-width: 0;
-    stroke: currentColor;
-    fill: currentColor;
-}
-
 .profile-info{
     display: flex;
     align-items: center;
     width: 135px;
     font-weight: 600;
+    margin-top: 10px;
     justify-content: space-between;
 }
 
-.circle-profile{
-    position: absolute;
-    fill: white;
-    stroke: #b1b0af;
-    stroke-width: 1px;
-
+@keyframes scale {
+    from {transform: scale(1)}
+    50% {transform: scale(1.25)}
+    to {transform: scale(1)}
 }
 
-.image-profile{
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    top: 8px;
-    left: 4px;
-    fill: #b1b0af;
+.profile{
+    text-decoration: none;
+    color: #8a8a8a;
+}
+
+.profile ellipse{
+    stroke: #8a8a8a;
+    fill:white;
+    transition: .3s;
+}
+
+.profile:hover ellipse{
+    stroke: #8a8a8a;
+    fill: #8a8a8a;
+}
+
+.click{
+    animation: scale 0.5s;
+}
+
+.profile path{
+    stroke: #8a8a8a;
+    fill:white;
 }
 
 .image-super-like{
@@ -258,22 +349,46 @@ A:hover line{
   .arrow {
     position: absolute;
     top: 60px;
-    border-radius: 15px;
-    display: block;
-    width: 30px;
-    height: 30px;
-    background: #0000007a;
-    border: none;
-    color:white;
-  }
-  
-  .arrow:focus {
-    outline: none;
-  }
-  
-  .arrow:hover {
-    background: black;
     cursor: pointer;
+  }
+
+  a{
+    position: relative;
+  }
+
+  a span{
+    opacity: 0;
+    border: 1px solid black;
+    border-radius: 14px;
+    white-space: nowrap;
+    padding: 5px;
+    position: absolute;
+    top: 105%;
+    left: 50%;
+    color: #ffffff;
+    background-color: rgb(0, 0, 0);
+    transform: translateX(-50%);
+    z-index: 5;
+    font-size: 11px;
+    font-family: "Arial";
+  }
+
+  a span::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    border: 7px solid transparent;
+    border-bottom-color: rgb(0, 0, 0);
+    transform: translateX(-50%);
+  }
+
+  a:hover span{
+      opacity: 1;
+  }
+  .arrow:hover path{
+      fill:white;
   }
   
   .prev {
