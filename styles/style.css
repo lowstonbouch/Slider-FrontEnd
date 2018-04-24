@@ -2,6 +2,8 @@ body{
     margin: 0 auto;
     width: 800px;
     border: 1px solid #0000004f;
+    font-family: 'arial';
+    color: #353535fa;
 }
 
 .content{
@@ -18,7 +20,7 @@ header{
 }
 
 .header-big-button{
-    width: 150px;
+    width: 190px;
     height: 90px;
     display: flex;
     align-items: center;
@@ -26,7 +28,7 @@ header{
 }
 
 .header-small-button{
-    width: 185px;
+    width: 240px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -34,16 +36,13 @@ header{
 
 .like{
     text-decoration: none;
-    color: red;
+    color: #ff3636;
 }
 
-.like-image{
-    display: block;
-    width: 70px;
-    height: 70px;
-    background: url('../img/heart-image.svg') 0 0;
-    background-repeat: no-repeat;
-    background-size: contain;
+.svg-like{
+    width: 70px ;
+    height: 70px ;
+    viewBox: 0 0 70px 70px;
 }
 
 .circle{
@@ -51,13 +50,25 @@ header{
     height: 70px;
 }
 
+.circle-mobile{
+    width: 25px;
+    height: 25px;
+    position: relative;
+}
+
 .circle-style{
     r: 30px;
     cx: 35px;
     cy: 35px;
     fill: rgba(255,255,255,255);
-    stroke: red;
+    stroke: #ff3636;
     stroke-width: 1px;
+}
+
+.circle-style-mobile{
+    r: 10px;
+    cx: 12px;
+    cy: 12px;
 }
 
 .hide{
@@ -75,6 +86,17 @@ line{
     height: 40px;
     top: 20px;
     left: 13px;
+    transition: .5s;
+}
+
+.heart-true{
+fill:#ff3636;
+stroke:white;
+}
+
+.heart-false{
+    fill:white;
+    stroke:#ff3636;
 }
 
 .online-icon {
@@ -83,7 +105,27 @@ line{
     height: 10px;
     stroke-width: 0;
     stroke: currentColor;
-    fill: currentColor;
+    fill: blue;
+}
+
+.user-online{
+    fill: #36e236;
+}
+.user-afk{
+    fill: orangered;
+}
+.user-ofline{
+    fill: gray;
+}
+
+.online{
+    position: relative;
+}
+
+.mobile{
+    position: absolute;
+    top: 3px;
+    left: 0px;
 }
 
 .profile-icon {
@@ -96,8 +138,20 @@ line{
     fill: currentColor;
 }
 
+.profile-info{
+    display: flex;
+    align-items: center;
+    width: 135px;
+    font-weight: 600;
+    justify-content: space-between;
+}
+
 .circle-profile{
     position: absolute;
+    fill: white;
+    stroke: #b1b0af;
+    stroke-width: 1px;
+
 }
 
 .image-profile{
@@ -106,6 +160,7 @@ line{
     position: absolute;
     top: 8px;
     left: 4px;
+    fill: #b1b0af;
 }
 
 .image-super-like{
@@ -116,17 +171,24 @@ line{
     left: 5px;
 }
 
+.super-like{
+    fill: white;
+    stroke: #ff6a00;
+    stroke-width: 1px;
+}
+
+
+
 .icon {
     display: inline-block;
     position: relative;
     top: 0;
     width: 70px;
     height: 70px;
-    margin: 0 .3em 0 0;
     transition: .5s;
     fill: rgba(255,255,255,255);
     filter: url(#shadow);
-    stroke: red;
+    stroke: #ff3636;
     stroke-width: 5;
     }
 A:hover .icon {
@@ -135,7 +197,7 @@ A:hover .icon {
     stroke-width: 5;
 }
 A:hover .circle-style {
-    fill: red;
+    fill: #ff3636;
     stroke: currentColor;
     stroke-width: 5;
 }
@@ -149,20 +211,11 @@ A:hover line{
     stroke-width: 2;
 }
 
-path {
-    transform: translate(7px) scale(.3);
-}
-
 .none{
     display: none;
 }
 
 .photo{
-    width: 120px;
-    height: 120px;
-    display: inline-block;
-    background-size: 100%;
-    background-repeat: no-repeat;
     cursor: pointer;
 }
 
@@ -171,18 +224,15 @@ path {
 }
 .s2{
     background-image: url('../img/s2.jpg');
-    background-size: 170%;
 }
 .s3{
     background-image: url('../img/s3.jpg');
 }
 .s4{
     background-image: url('../img/s4.jpg');
-    background-size: 110%;
 }
 .s5{
     background-image: url('../img/s5.jpg');
-    background-size: 137%;
 }
 .s6{
     background-image: url('../img/s6.jpg');
@@ -193,32 +243,28 @@ path {
   
   .carousel {
     position: relative;
-    width: 718px;
-    padding: 10px 40px;
-    border: 1px solid #CCC;
-    border-radius: 15px;
-    background: #eee;
+    width: 800px;
   }
   
   .carousel img {
-    width: 120px;
-    height: 120px;
-    /* по умолчанию inline, в ряде браузеров это даст лишнее пространство вокруг элементов */
-  
+    width: 134px;
+    height: 160px;
     display: block;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
   
   .arrow {
     position: absolute;
     top: 60px;
-    padding: 0;
-    background: #ddd;
     border-radius: 15px;
-    border: 1px solid gray;
-    font-size: 24px;
-    line-height: 24px;
-    color: #444;
     display: block;
+    width: 30px;
+    height: 30px;
+    background: #0000007a;
+    border: none;
+    color:white;
   }
   
   .arrow:focus {
@@ -226,7 +272,7 @@ path {
   }
   
   .arrow:hover {
-    background: #ccc;
+    background: black;
     cursor: pointer;
   }
   
@@ -241,9 +287,15 @@ path {
   .gallery {
     overflow: hidden;
   }
+
+  .gallery-big{
+    overflow: hidden;
+    height: 500px;
+    display: flex;
+  }
   
   .gallery ul {
-    height: 120px;
+    height: 140px;
     width: 9999px;
     margin: 0;
     padding: 0;
@@ -260,7 +312,7 @@ path {
   }
 
   .education{
-    width: 480px;
+    width: 479px;
     height: 160px;
     display: flex;
     flex-direction: column;
@@ -272,7 +324,6 @@ path {
   }
 
   .about-education{
-    margin-left: 60px;
     position: relative;
   }
 
@@ -286,18 +337,19 @@ path {
   }
 
   .map {
-    width: 400px;
+    width: 527px;
     height: 140px;
     margin-left: 40px;
+    margin-right: 17px;
     background-color: grey;
   }
 
-  .education-and-score{
+  .double-content{
       display:flex;
   }
 
   .score{
-    margin-left: 25px;
+  
   }
 
   .carousel-big-photo{
@@ -310,18 +362,59 @@ path {
   }
 
   .big-photo{
-    display: block;
-    margin: auto;
-    background-repeat: no-repeat;
+    margin: 0 auto;
+    max-height: 100%;
   }
 
-  .big-photo-1{
-    width: 486px;
-    height: 650px;
+  .button-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 40px;
   }
 
-  .big-photo-2{
-    width: 630px;
-    height: 469px;
-    background-size: 100%;
+  .button-nav{
+    border: 1px solid #8a8a8a;
+    border-radius: 5px;
+    padding: 5px 10px;
+  }
+
+  .button-wrapper span>img{
+    width:10px;
+  }
+
+  .gifts{
+    border-left: 1px solid #00000038;
+  }
+
+  .social{
+    width: 469px;
+  }
+
+  .contacts{
+    border-left: 1px solid #00000038;
+  }
+
+  h3,p{
+    margin-left: 40px;
+    position: relative;
+  }
+
+  .after-line::after{
+    content: ' ';
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    left: -20px;
+    border-bottom: 1px solid #00000038;
+  }
+
+  .about-profile{
+    width: 325px;
+    margin: 0;
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 5px;
+    text-overflow: ellipsis;
   }
