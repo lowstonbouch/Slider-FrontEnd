@@ -1,4 +1,4 @@
-body{
+body {
     margin: 0 auto;
     width: 1200px;
     display: flex;
@@ -9,57 +9,57 @@ body{
     background-color: #eeeeee
 }
 
-.content{
+.content {
     display: flex;
     justify-content: flex-start;
     width: 100%;
 }
 
-.nav{
+.nav {
     width: 198px;
 }
 
-.menu ul{
+.menu ul {
     list-style: none;
 }
 
-.people p{
+.people p {
     margin: 0 5px;
     padding: 5px 10px;
     background-color: #ffffff;
     border-radius: 10px;
 }
 
-.people ul{
+.people ul {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
     padding: 0;
 }
 
-.friends ul{
+.friends ul {
     display: flex;
     flex-direction: column;
     list-style: none;
     padding: 0;
 }
 
-.friends img{
+.friends img {
     width: 45px;
     margin: 3px;
     border-radius: 50%;
 }
 
-.friends a{
+.friends a {
     position: relative;
 }
 
-.right-content{
+.right-content {
     margin-left: 10px;
     margin-top: -95px;
 }
 
-.friends a::after{
+.friends a::after {
     content: "";
     width: 8px;
     height: 8px;
@@ -70,22 +70,21 @@ body{
     border-radius: 50%;
 }
 
-.people img{
+.people img {
     width: 56px;
     margin: 3px;
     border-radius: 50%;
 }
 
-
-.people li:first-child{
+.people li:first-child {
     margin-left: 65px;
 }
 
-.people a{
+.people a {
     position: relative;
 }
 
-.people a::after{
+.people a::after {
     content: "";
     width: 8px;
     height: 8px;
@@ -96,26 +95,25 @@ body{
     border-radius: 50%;
 }
 
-li a{
+li a {
     text-decoration: none;
     cursor: pointer;
     color: #777777;
 }
 
-li{
+li {
     margin: 5px 0;
 }
 
-
-li a:hover{
+li a:hover {
     color: #7201eb;
 }
 
-.active{
+.active {
     color: #7201eb;
 }
 
-.info{
+.info {
     display: flex;
     flex-direction: column;
     width: 800px;
@@ -124,7 +122,7 @@ li a:hover{
     border-top: none;
 }
 
-header{
+header {
     display: flex;
     height: 90px;
     width: 800px;
@@ -134,7 +132,7 @@ header{
     border-bottom: none;
 }
 
-.header-big-button{
+.header-big-button {
     width: 190px;
     height: 90px;
     display: flex;
@@ -142,152 +140,151 @@ header{
     justify-content: center;
 }
 
-.header-small-button{
+.header-small-button {
     width: 240px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
 
-
-.super-like{
+.super-like {
     text-decoration: none;
     color: #ff3636;
 }
 
-.super-like ellipse{
-    fill:white;
+.super-like ellipse {
+    fill: white;
     stroke: #ff3636;
     stroke-width: 1px;
     transition: .3s;
 }
 
-.super-like path{
-    fill:white;
+.super-like path {
+    fill: white;
     stroke: #ff3636;
     stroke-width: 1px;
     transition: .3s;
 }
 
-.super-like:hover path{
-    fill:white;
+.super-like:hover path {
+    fill: white;
     stroke: white;
     stroke-width: 1px;
     transition: .3s;
 }
 
-.super-like:hover ellipse{
-    fill:#ff3636;
+.super-like:hover ellipse {
+    fill: #ff3636;
     stroke: #ff3636;
 }
 
-.super-like-true path{
-        fill:#ff3636;
-        stroke: #ff3636;
-        stroke-width: 1px;
-        transition: .3s;
+.super-like-true path {
+    fill: #ff3636;
+    stroke: #ff3636;
+    stroke-width: 1px;
+    transition: .3s;
 }
 
-.like{
+.like {
     text-decoration: none;
     color: #ff3636;
 }
 
-.like ellipse{
-    fill:white;
+.like ellipse {
+    fill: white;
     stroke: #ff3636;
     stroke-width: 1px;
     transition: .3s;
 }
 
-.like path{
-    fill:white;
+.like path {
+    fill: white;
     stroke: #ff3636;
     stroke-width: 1px;
     transition: .3s;
 }
 
-.like:hover ellipse{
-    fill:#ff3636;
+.like:hover ellipse {
+    fill: #ff3636;
     stroke: #ff3636;
 }
 
-dislike{
+dislike {
     text-decoration: none;
     color: #0329b3;
 }
 
-.dislike ellipse{
-    fill:white;
+.dislike ellipse {
+    fill: white;
     stroke: #0329b3;
     stroke-width: 1px;
     transition: .3s;
 }
 
-.dislike line{
-    fill:none;
+.dislike line {
+    fill: none;
     stroke: #0329b3;
     stroke-width: 1px;
     transition: .3s;
 }
 
-.dislike:hover ellipse{
-    fill:#0329b3;
+.dislike:hover ellipse {
+    fill: #0329b3;
     stroke: #0329b3;
 }
 
-.dislike:hover line{
-    fill:none;
+.dislike:hover line {
+    fill: none;
     stroke: white;
 }
 
-.dislike-true line{
-    fill:none;
+.dislike-true line {
+    fill: none;
     stroke-width: 3px;
     stroke: #0329b3;
 }
 
-.svg-like{
-    width: 70px ;
-    height: 70px ;
+.svg-like {
+    width: 70px;
+    height: 70px;
     viewBox: 0 0 70px 70px;
 }
 
-.circle{
+.circle {
     width: 70px;
     height: 70px;
 }
 
-.circle-mobile{
+.circle-mobile {
     width: 25px;
     height: 25px;
     position: relative;
 }
 
-.circle-style{
+.circle-style {
     r: 30px;
     cx: 35px;
     cy: 35px;
-    fill: rgba(255,255,255,255);
+    fill: rgba(255, 255, 255, 255);
     stroke: #ff3636;
     stroke-width: 1px;
 }
 
-.circle-style-mobile{
+.circle-style-mobile {
     r: 10px;
     cx: 12px;
     cy: 12px;
 }
 
-.hide{
+.hide {
     stroke: blue;
 }
 
-line{
+line {
     stroke: blue;
 }
 
-.heart{
+.heart {
     position: absolute;
     display: inline-block;
     width: 40px;
@@ -297,38 +294,40 @@ line{
     transition: .5s;
 }
 
-.heart-true path{
-fill:#ff3636;
-stroke:white;
+.heart-true path {
+    fill: #ff3636;
+    stroke: white;
 }
 
-.user-online{
+.user-online {
     fill: #36e236;
 }
-.user-afk{
+
+.user-afk {
     fill: orangered;
 }
-.user-ofline{
+
+.user-ofline {
     fill: gray;
 }
 
-.online ellipse{
+.online ellipse {
     stroke: #0f81a2;
-    fill:none;
+    fill: none;
 }
 
-.online path{
+.online path {
     stroke: #0f81a2;
-    fill:none;
+    fill: none;
 }
 
-.mobile{
+.mobile {
     position: absolute;
     top: 3px;
     left: 0px;
 }
 
-.profile-info{
+.profile-info {
     display: flex;
     align-items: center;
     width: 135px;
@@ -338,37 +337,43 @@ stroke:white;
 }
 
 @keyframes scale {
-    from {transform: scale(1)}
-    50% {transform: scale(1.25)}
-    to {transform: scale(1)}
+    from {
+        transform: scale(1)
+    }
+    50% {
+        transform: scale(1.25)
+    }
+    to {
+        transform: scale(1)
+    }
 }
 
-.profile{
+.profile {
     text-decoration: none;
     color: #8a8a8a;
 }
 
-.profile ellipse{
+.profile ellipse {
     stroke: #8a8a8a;
-    fill:white;
+    fill: white;
     transition: .3s;
 }
 
-.profile:hover ellipse{
+.profile:hover ellipse {
     stroke: #8a8a8a;
     fill: #8a8a8a;
 }
 
-.click{
+.click {
     animation: scale 0.5s;
 }
 
-.profile path{
+.profile path {
     stroke: #8a8a8a;
-    fill:white;
+    fill: white;
 }
 
-.image-super-like{
+.image-super-like {
     width: 40px;
     height: 40px;
     position: absolute;
@@ -376,13 +381,11 @@ stroke:white;
     left: 5px;
 }
 
-.super-like{
+.super-like {
     fill: white;
     stroke: #ff6a00;
     stroke-width: 1px;
 }
-
-
 
 .icon {
     display: inline-block;
@@ -391,40 +394,44 @@ stroke:white;
     width: 70px;
     height: 70px;
     transition: .5s;
-    fill: rgba(255,255,255,255);
+    fill: rgba(255, 255, 255, 255);
     filter: url(#shadow);
     stroke: #ff3636;
     stroke-width: 5;
-    }
+}
+
 A:hover .icon {
-    fill: rgba(255,255,255,255);
-    stroke: rgba(255,255,255,255);
+    fill: rgba(255, 255, 255, 255);
+    stroke: rgba(255, 255, 255, 255);
     stroke-width: 5;
 }
+
 A:hover .circle-style {
     fill: #ff3636;
     stroke: currentColor;
     stroke-width: 5;
 }
+
 A:hover .hide {
     fill: blue;
     stroke: blue;
     stroke-width: 5;
 }
-A:hover line{
-    stroke: rgba(255,255,255,255);
+
+A:hover line {
+    stroke: rgba(255, 255, 255, 255);
     stroke-width: 2;
 }
 
-.none{
+.none {
     display: none;
 }
 
-.photo{
+.photo {
     cursor: pointer;
 }
 
-.count-photo{
+.count-photo {
     position: absolute;
     left: 100px;
     bottom: 40px;
@@ -445,10 +452,10 @@ A:hover line{
 }
 
 .count-photo i path {
-   fill: white;
+    fill: white;
 }
 
-.report{
+.report {
     position: absolute;
     right: 100px;
     bottom: 40px;
@@ -459,57 +466,63 @@ A:hover line{
     cursor: pointer;
 }
 
-.report:hover{
-    background:black;
+.report:hover {
+    background: black;
 }
 
-.s1{
+.s1 {
     background-image: url('../img/s1.jpg');
 }
-.s2{
+
+.s2 {
     background-image: url('../img/s2.jpg');
 }
-.s3{
+
+.s3 {
     background-image: url('../img/s3.jpg');
 }
-.s4{
+
+.s4 {
     background-image: url('../img/s4.jpg');
 }
-.s5{
+
+.s5 {
     background-image: url('../img/s5.jpg');
 }
-.s6{
+
+.s6 {
     background-image: url('../img/s6.jpg');
 }
-.s7{
+
+.s7 {
     background-image: url('../img/s7.jpg');
 }
-  
-  .carousel {
+
+.carousel {
     position: relative;
     width: 800px;
-  }
-  
-  .carousel img {
+}
+
+.carousel img {
     width: 134px;
     height: 160px;
     display: block;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-  }
-  
-  .arrow {
+}
+
+.arrow {
     position: absolute;
     top: 60px;
     cursor: pointer;
-  }
+}
 
-  .arrow-big{
+.arrow-big {
     top: 50%;
-  }
+}
 
-  .big-gifts{
+.big-gifts {
     position: absolute;
     top: 0;
     left: 0;
@@ -520,22 +533,22 @@ A:hover line{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
+}
 
-  .big-gifts img{
+.big-gifts img {
     margin: auto;
     margin-top: 70px;
     margin-bottom: 10px;
     width: 25%;
-  }
+}
 
-  .big-gifts p{
+.big-gifts p {
     margin: 7px;
     color: white;
     font-weight: 600;
-  }
+}
 
-  .button-gift{
+.button-gift {
     margin: 5px;
     padding: 5px 10px;
     color: black;
@@ -545,17 +558,17 @@ A:hover line{
     border-radius: 5px;
     cursor: pointer;
     outline: none;
-  }
+}
 
-  .button-gift:hover{
-    background:white;
-  }
+.button-gift:hover {
+    background: white;
+}
 
-  a{
+a {
     position: relative;
-  }
+}
 
-  a span{
+a span {
     opacity: 0;
     border: 1px solid black;
     border-radius: 14px;
@@ -570,9 +583,9 @@ A:hover line{
     z-index: 5;
     font-size: 11px;
     font-family: "Arial";
-  }
+}
 
-  a span::after{
+a span::after {
     content: '';
     display: block;
     position: absolute;
@@ -581,34 +594,35 @@ A:hover line{
     border: 7px solid transparent;
     border-bottom-color: rgb(0, 0, 0);
     transform: translateX(-50%);
-  }
+}
 
-  a:hover span{
-      opacity: 1;
-  }
-  .arrow:hover path{
-      fill:white;
-  }
-  
-  .prev {
+a:hover span {
+    opacity: 1;
+}
+
+.arrow:hover path {
+    fill: white;
+}
+
+.prev {
     left: 7px;
-  }
-  
-  .next {
-    right: 7px;
-  }
-  
-  .gallery {
-    overflow: hidden;
-  }
+}
 
-  .gallery-big{
+.next {
+    right: 7px;
+}
+
+.gallery {
+    overflow: hidden;
+}
+
+.gallery-big {
     overflow: hidden;
     height: 500px;
     display: flex;
-  }
-  
-  .gallery ul {
+}
+
+.gallery ul {
     height: 140px;
     width: 9999px;
     margin: 0;
@@ -617,49 +631,48 @@ A:hover line{
     transition: margin-left 250ms;
     /* remove white-space between inline-block'ed li */
     /* http://davidwalsh.name/remove-whitespace-inline-block */
-  
     font-size: 0;
-  }
-  
-  .gallery li {
-    display: inline-block;
-  }
+}
 
-  .education{
+.gallery li {
+    display: inline-block;
+}
+
+.education {
     width: 479px;
     height: 160px;
     display: flex;
     flex-direction: column;
     border-right: 1px solid #00000038;
-  }
+}
 
-  h1{
+h1 {
     margin-left: 60px;
-  }
+}
 
-  .about-education{
+.about-education {
     position: relative;
-  }
+}
 
-  .about-education::after{
+.about-education::after {
     content: ' ';
     width: 410px;
     position: absolute;
     top: 50px;
     left: -20px;
     border-bottom: 1px solid black;
-  }
+}
 
-  .map {
+.map {
     width: 527px;
     height: 140px;
     margin-left: 40px;
     margin-right: 17px;
     background-color: grey;
     position: relative;
-  }
+}
 
-  .whatch-map{
+.whatch-map {
     position: absolute;
     background: white;
     display: flex;
@@ -669,13 +682,13 @@ A:hover line{
     height: 112px;
     left: 75px;
     top: 10px;
-  }
+}
 
-  .whatch-map p {
-      margin: 10px 0;
-  }
+.whatch-map p {
+    margin: 10px 0;
+}
 
-  .whatch-map button{
+.whatch-map button {
     color: #ffffff;
     font-size: 14px;
     cursor: pointer;
@@ -685,9 +698,9 @@ A:hover line{
     border-radius: 5px;
     border: none;
     outline: none;
-  }
+}
 
-  .whatch-map button:hover{
+.whatch-map button:hover {
     color: #ffffff;
     font-size: 14px;
     cursor: pointer;
@@ -697,72 +710,71 @@ A:hover line{
     border-radius: 5px;
     border: none;
     outline: none;
-  }
+}
 
+.double-content {
+    display: flex;
+    position: relative;
+}
 
-
-  .double-content{
-      display:flex;
-      position: relative;
-  }
-
-  .carousel-big-photo{
+.carousel-big-photo {
     position: relative;
     width: 720px;
     padding: 0px 40px;
     background: #6f6f6f;
-  }
+}
 
-  .big-photo{
+.big-photo {
     margin: 0 auto;
     max-height: 100%;
-  }
+}
 
-  .button-wrapper{
+.button-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-around;
     height: 40px;
-  }
+}
 
-  .button-nav{
+.button-nav {
     border: 1px solid #8a8a8a;
     border-radius: 5px;
     padding: 5px 10px;
     margin: 0 3px;
-  }
+}
 
-  .button-wrapper span>img{
-    width:10px;
-  }
+.button-wrapper span>img {
+    width: 10px;
+}
 
-  .gifts{
+.gifts {
     border-left: 1px solid #00000038;
-  }
+}
 
-  .social{
+.social {
     width: 469px;
-  }
+}
 
-  .contacts{
+.contacts {
     border-left: 1px solid #00000038;
-  }
+}
 
-  h3,p{
+h3,
+p {
     margin-left: 40px;
     position: relative;
-  }
+}
 
-  .after-line::after{
+.after-line::after {
     content: ' ';
     width: 100%;
     position: absolute;
     top: 50px;
     left: -20px;
     border-bottom: 1px solid #00000038;
-  }
+}
 
-  .about-profile{
+.about-profile {
     width: 325px;
     margin: 0;
     font-size: 12px;
@@ -770,4 +782,4 @@ A:hover line{
     overflow: hidden;
     padding: 5px;
     text-overflow: ellipsis;
-  }
+}
